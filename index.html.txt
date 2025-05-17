@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Be Your Own Brand - Poradniki ewhoring</title>
+<style>
+  /* Reset i podstawy */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #f0f0f0;
+  }
+  header {
+    background: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #00b894;
+  }
+  main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 15px;
+  }
+  h2 {
+    color: #00cec9;
+    margin-bottom: 15px;
+  }
+  .packages {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .package {
+    background: #2d2d2d;
+    border-radius: 12px;
+    padding: 25px;
+    flex: 1 1 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px #00b894aa;
+    transition: transform 0.3s ease;
+  }
+  .package:hover {
+    transform: scale(1.05);
+  }
+  .package h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    color: #00b894;
+  }
+  .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 10px 0 20px;
+    color: #00cec9;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    flex-grow: 1;
+  }
+  ul li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+  }
+  ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #00b894;
+  }
+  button {
+    background: #00b894;
+    border: none;
+    padding: 15px 30px;
+    color: #121212;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background: #019875;
+  }
+  footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  @media(max-width: 650px) {
+    .packages {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  Be Your Own Brand
+</header>
+
+<main>
+  <section>
+    <h2>Wybierz swój pakiet poradników</h2>
+    <div class="packages">
+      <article class="package">
+        <h3>Pakiet Startowy</h3>
+        <div class="price">100 zł</div>
+        <ul>
+          <li>Podstawy ewhoringu</li>
+          <li>Tworzenie profilu</li>
+          <li>Strategie zdobywania klientów</li>
+        </ul>
+        <button onclick="alert('Dziękujemy za zainteresowanie Pakietem Startowym!')">Kup teraz</button>
+      </article>
+
+      <article class="package">
+        <h3>Pakiet Profesjonalny</h3>
+        <div class="price">300 zł</div>
+        <ul>
+          <li>Wszystko z Pakietu Startowego</li>
+          <li>Zaawansowane techniki marketingowe</li>
+          <li>Automatyzacja sprzedaży</li>
+          <li>Wsparcie na Telegramie</li>
+        </ul>
+        <button onclick="alert('Dziękujemy za zainteresowanie Pakietem Profesjonalnym!')">Kup teraz</button>
+      </article>
+
+      <article class="package">
+        <h3>Pakiet VIP</h3>
+        <div class="price">600 zł</div>
+        <ul>
+          <li>Wszystko z Pakietu Profesjonalnego</li>
+          <li>Indywidualne konsultacje</li>
+          <li>Pełna strategia biznesowa</li>
+          <li>Dostęp do ekskluzywnych materiałów</li>
+        </ul>
+        <button onclick="alert('Dziękujemy za zainteresowanie Pakietem VIP!')">Kup teraz</button>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Be Your Own Brand. Wszelkie prawa zastrzeżone.
+</footer>
+
+</body>
+</html>
